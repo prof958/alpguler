@@ -2,35 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alp Güler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alp Güler – Senior Developer</title>
   <style>
     body {
-      font-family: sans-serif;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background: #111;
-      color: #f8f8f8;
+      justify-content: start;
+      min-height: 100vh;
+      padding: 2em 1em;
+      text-align: center;
     }
-    h1 { font-size: 2.5em; }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #d8ff00;
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin: 0.2em 0;
+      color: #d8ff00;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      color: #bbb;
+      margin-bottom: 1.5em;
+    }
+
+    .section {
+      margin: 1.5em 0;
+    }
+
+    .section-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      color: #f0f0f0;
+      letter-spacing: 1px;
+      font-size: 0.9em;
+    }
+
     a {
       color: #d8ff00;
       text-decoration: none;
-      margin: 0.5em;
+      display: inline-block;
+      margin: 0.3em;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .link-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (min-width: 600px) {
+      .link-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      a {
+        margin: 0.3em 1em;
+      }
     }
   </style>
 </head>
 <body>
+
+  <img class="profile-img" src="profile.jpg" alt="Profile Picture of Alp Güler">
+
   <h1>Alp Güler</h1>
-  <p>Senior Developer @teamdefinex | TTRPG Organizer | Cyberpunk Enthusiast</p>
-  <div>
-    <a href="https://github.com/cyb3r-synth">GitHub</a>
-    <a href="https://x.com/BlushRadiant">Twitter</a>
-    <a href="mailto:you@example.com">Email Me</a>
+  <div class="subtitle">Senior Developer @ DefineX · TTRPG Organizer · Full Stack Enthusiast</div>
+
+  <div class="section">
+    <div class="section-title">Contact</div>
+    <div class="link-group">
+      <a href="mailto:hello@alpguler.dev">hello@alpguler.dev</a>
+    </div>
   </div>
+
+  <div class="section">
+    <div class="section-title">Socials</div>
+    <div class="link-group">
+      <a href="https://github.com/prof958" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/alpgulerce/" target="_blank">LinkedIn</a>
+      <a href="https://bsky.app/profile/alp.d12macera.com" target="_blank">Bluesky</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Projects</div>
+    <div class="link-group">
+      <a href="https://d12macera.com/" target="_blank">🎲 d12Macera – TTRPG Hub</a>
+      <a href="https://minyaturmaceracilar.com/" target="_blank">🛒 Minyatür Maceracılar – TTRPG Store</a>
+    </div>
+  </div>
+
 </body>
 </html>
